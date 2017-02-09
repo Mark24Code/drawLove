@@ -11,4 +11,11 @@ def drawLove(keyword):
     print('\n'.join(arr))
 
 if __name__ == '__main__':
-    drawLove("LoveTanling")
+    import sys
+    keyword = "LoveTanling"
+    try:
+        keyword = sys.argv[1]
+    except:
+        pass
+
+    drawLove(keyword)
